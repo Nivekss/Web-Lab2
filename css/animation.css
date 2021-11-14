@@ -1,0 +1,74 @@
+.animation{
+    width: 700px;
+    height: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: skyblue;
+    box-sizing: border-box;
+    animation: sky 10s infinite alternate;
+}
+
+
+#moon {
+    position: relative;
+    top: 450px;
+    right: 60px;
+    float: right;
+    width: 70px;
+    animation: rise 10s linear infinite alternate;
+    
+}
+
+#sun {
+    position: relative;
+    width: 200px;
+    animation: dawn 10s linear infinite alternate;
+}
+
+#person {
+    top: 100px;
+    width: 100px;
+    float: left;
+    position: relative;
+    animation: move-right 10s linear infinite alternate;
+    z-index: 1;
+}
+
+#house {
+    position: relative;
+    bottom: 200px;
+    width: 700px;
+
+}
+
+@keyframes move-right {
+    0%{left:40px;}
+    100%{left:450px}
+}
+
+@keyframes dawn {
+    0%{
+        top:0px;
+        opacity: 1;
+    }
+    100%{
+        top: 350px;
+        opacity: 0;
+    }
+}
+
+@keyframes sky {
+    0%{}
+    100%{background-color:#1b2124;}
+}
+
+
+@keyframes rise {
+    0%{opacity: 0;}
+    100%{
+        top: 30px;
+        opacity: 1;
+    }
+    
+}
+
